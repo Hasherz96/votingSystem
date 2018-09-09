@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    title Welcome
+    link(rel='stylesheet/scss', href='/stylesheets/bootstrap.scss')
+    link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+
+    <link rel="shortcut icon" href="">
+  body
+    .navbar.navbar-default(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button',data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Online Voting System UCSC
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li(class=(title == 'Members' ? 'active' : ''))
+              a(href='/') Members
+            li(class=(title == 'Register' ? 'active' : ''))
+              a(href='/users/register') Register
+            li(class=(title == 'Login' ? 'active' : ''))
+              a(href='/users/login') Login
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/users/logout') Logout
+      .container
+      block content
+
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    
+              
