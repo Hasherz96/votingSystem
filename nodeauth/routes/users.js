@@ -32,6 +32,8 @@ router.post('/register',upload.single('profileimage'), function(req, res, next) 
     console.log('No File uploaded..');
     var profileimage = 'noimage.jpg';
   }
+
+  console.log(name);
 });
 
 
