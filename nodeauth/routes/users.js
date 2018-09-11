@@ -34,6 +34,7 @@ router.post('/register',upload.single('profileimage'), function(req, res, next) 
   }
 
   console.log(name);
+  console.log(name);
 });
 
 
